@@ -102,7 +102,7 @@ circles = ['AP','KK','MP','MH','BH','KO','WB','KL','CH','DL','JK','GJ','OR','JH'
 
 global user
 user = os.getenv('username')
-passw = 'Protyusha@2801'          # Paste your LAN password inside quotation
+passw = ''          # Paste your LAN password inside quotation
 auth_code_string = ''
 
 
@@ -123,7 +123,7 @@ app = Tk()
 app.geometry('600x300')
 app.config(background='#709179')
 app.attributes('-topmost',True)
-code = StringVar()
+code = StringVar(app)
 def login(x=None):
     global auth_code_string
     auth_code_string = code.get()
